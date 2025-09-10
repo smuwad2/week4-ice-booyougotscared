@@ -14,7 +14,7 @@
             border-radius: 50%;
         }
         #div1.square {
-            border-radius: 0%;
+            border-radius: 0px;
         }
     </style>
 
@@ -32,7 +32,7 @@
         var square=true;
        // add code here
        function changeShape() {
-        var div = document.getElementById("div1");
+        let div = document.getElementById("div1");
            if (square) {
                div.className="circle";
                square=false;
