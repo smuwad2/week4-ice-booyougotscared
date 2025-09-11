@@ -29,13 +29,11 @@
          const newItem = document.createElement("li");
          newItem.textContent = inputText.value;
          document.querySelector("ul").appendChild(newItem);
-         
+      
          const deleteButton = document.createElement("button");
          deleteButton.textContent = "Delete";   
          deleteButton.onclick = function() { deleteItem(newItem); };
          newItem.appendChild(deleteButton);
-
-
       }
       function deleteItem(item){
          item.remove();
