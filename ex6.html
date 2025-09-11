@@ -19,7 +19,15 @@
     <script>
         
         // add code here
-        
+        select_item.addEventListener("change", addItem);
+
+        function addItem(){
+         const select_item = document.getElementById("select_item");
+         const newItem = document.createElement("li");
+         newItem.textContent = select_item.value;
+         document.querySelector("ul").appendChild(newItem);
+        }
+
         
     </script>
 
